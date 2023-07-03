@@ -1,2 +1,0 @@
-# yumekawa.github.io
-pages
