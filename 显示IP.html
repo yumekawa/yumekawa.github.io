@@ -1,0 +1,11 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ip</title>
+	<script type="application/javascript">
+  	function getip(json) {
+    	document.write("My public IP address is: ", json.ip);
+  	}
+	</script>
+	<script type="application/javascript" src="https://api64.ipify.org/?format=jsonp&callback=getip"></script>
+</html>

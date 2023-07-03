@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html><head>
+<title id="title">神様は乗り越えられる试练しか与えない.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="GOOGLEBOT" content="noindex,nofollow">
+	<meta name="description" content="1">
+	<meta name="keywords" content="2">
+	<meta name="Author" content="3">
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<link rel="stylesheet" href="./css/index.css">
+	<script src="./js/index.js"></script>
+	<script>
+	setInterval(function(){
+			var tag = document.getElementById('title');
+			var content = tag.innerText; 
+			var firstStr = content.charAt(0);
+			var surplue = content.substring(1, content.length);
+			var new_content = surplue + firstStr; 
+			tag.innerText = new_content;
+		}, 700);
+	</script>
+	<script>
+		function time(){
+			var date = new Date();
+			var year = date.getFullYear();
+			var month = date.getMonth()+1;
+			var day = date.getDate();
+			var week = date.getDay();
+			week="日月火水木金土".charAt(week);
+			var hour =date.getHours();
+			hour=hour<10?"0"+hour:hour;
+			var minute =date.getMinutes();
+			minute=minute<10?"0"+minute:minute;
+			var second = date.getSeconds();
+			second=second<10?"0"+second:second;
+			var currentTime = year+"-"+month+"-"+day+" "+week+"曜日 "+hour+":"+minute+":"+second;
+			document.getElementById("time").innerHTML=currentTime;
+        }
+		setInterval("time()",1000);
+	</script>
+</head>
+<body onload="time()">
+	<section class="board board-index1">
+		<div class="title-bar-btns">
+			<a href="#index#" onclick="document.documentElement.scrollTop=0" id="index" class="title-bar"><span>ホームページ</span></a>
+			<a href="#intro" class="title-bar other">紹介</a>
+			<a href="#prj1" class="title-bar other">項目1</a>
+			<a href="#prj2" class="title-bar other">項目2</a>
+			<a href="#about" class="title-bar other">その他</a>
+		</div>
+		<div class="left-text">
+			<h1 class="bigtext">プロジェクト紹介用ホームページ</h1>
+			<h2 class="middletext">項目1:日本番組生放送と見逃しプロジェクト</h2>
+			<h2 class="middletext">項目2:オンラインビデオ管理システム</h2>
+		</div>
+		<a class="float-down" href="#intro">↓</a>
+	</section>
+	
+	<section class="board board-intro" style="--bg: url(../images/2.jpg)">
+		<a onclick="document.documentElement.scrollTop=window.innerHeight" id="intro" href="#intro#" class="title-bar">
+			<div class="bg"></div>
+			<span>紹介</span>
+		</a>
+		<div class="bg"></div>
+		<div class="left-text">
+			<div class="middletext">開発背景、環境、関連技術</div>
+			<table border="0">
+			<tr><td>開発背景:</td><td>項目1：現在使っているの日本番組放送有料サイトはパソコンと移動設備が別々で払うしかないので
+			、<br>そのサイトの再生ソースをこのプロジェクトを通じて、自分のパソコンをサーバーとして移動設備で再生する
+			<br>項目2：一部サイトの再生ソースやパソコン内のビデオは外で見えるため</td></tr>
+			<tr><td>開発環境:</td><td></td></tr>
+			<tr><td>OS:</td><td>Microsoft Windows Version 22H2</td></tr>
+			<tr><td>SCI:</td><td>I7-8700、GTX1060、16G-RAM</td></tr>
+			<tr><td>IDE:</td><td>Eclipse Java EE IDE for Web Developers.Mars.2 Release4.5.2</td></tr>
+			<tr><td>Server:</td><td>Apache-Tomcat-8.0.35</td></tr>
+			<tr><td>Browser:</td><td>Mozilla Firefox-76.0-win64、Google Chrome-113.0.5672.126</td></tr>
+			<tr><td>Database:</td><td>mysql-5.1.51-win32、HeidiSQL 8.3.4694</td></tr>
+			<tr><td>関連技術:</td><td>JSP、JDBC、SQL、JavaBean、Servlet、Filter、JavaScript、CSS、XML、HTML
+			<br>ビデオプレーヤー提供: https://github.com/DIYgod/DPlayer</td></tr>
+			</table>
+		</div>
+		<a class="float-down" href="#prj1">↓</a>
+	</section>
+	
+	<section class="board" style="--bg: url(../images/3.jpg">
+		<a onclick="document.documentElement.scrollTop=window.innerHeight*2" href="#prj1#" id="prj1" class="title-bar">
+			<div class="bg"></div>
+			<span>項目1</span>
+		</a>
+		<div class="bg"></div>
+		<div class="left-text">
+			<div class="middletext2">日本番組生放送と見逃しプロジェクト</div>
+			<div class="middletext3">●登録機能付き、利用するにはログインが必要（データベースに記録する）</div>	
+			<div class="middletext3">●日本地上波民放放送見る可能（関東と関西各5社）</div>
+			<div class="middletext3">●限定時間内の番組見逃し可能（自分で時間を入力）</div>
+		</div>
+		<div class="right-pic">
+			<video id="demovideo1"  muted="muted" onclick="playVideo('demovideo1', 'playButton1', 'pauseButton1')" loop="loop" class="video animated-up">
+    				<source src="./demo1.mp4" type="video/mp4">
+			</video>
+			<div id="playButton1" onclick="playVideo('demovideo1', 'playButton1', 'pauseButton1')">
+   			 	<svg height="100" width="100">
+        					<polygon points="25,20 75,50 25,80" style="fill:rgba(255,255,255,0.5);"/>
+    				</svg>
+			</div>
+			<div id="pauseButton1" onclick="playVideo('demovideo1', 'playButton1', 'pauseButton1')" style="display: none;">
+    				<svg height="100" width="100">
+        					<rect x="25" y="20" width="20" height="60" style="fill:rgba(255,255,255,0.5);"/>
+        					<rect x="55" y="20" width="20" height="60" style="fill:rgba(255,255,255,0.5);"/>
+    				</svg>
+			</div>
+		</div>
+		<a class="float-down" href="#prj2">↓</a>
+		
+	</section>
+		<section class="board" style="--bg: url(../images/4.jpg">
+		<a onclick="document.documentElement.scrollTop=window.innerHeight*3" href="#prj2#" id="prj2" class="title-bar">
+			<div class="bg"></div>
+			<span>項目2</span>
+		</a>
+		<div class="bg"></div>
+		<div class="left-text">
+			<div class="middletext2">オンラインビデオ管理システム</div>
+			<div class="middletext3">●登録機能付き、利用するにはログインが必要（データベースに記録する）</div>
+			<div class="middletext3">●ネット上のビデオリンクやパソコン内部の<br>
+			&nbsp;&nbsp;ビデオデータをウェブサイト内で再生する</div>
+			<div class="middletext3">●増加した内容管理できる（追加、削除、アップデート）</div>
+		</div>
+		<div class="right-pic">
+			<video id="demovideo2"  muted="muted" onclick="playVideo('demovideo2', 'playButton2', 'pauseButton2')" loop="loop" class="video animated-up">
+    				<source src="./demo2.mp4" type="video/mp4">
+			</video>
+			<div id="playButton2" onclick="playVideo('demovideo2', 'playButton2', 'pauseButton2')">
+   			 	<svg height="100" width="100">
+        					<polygon points="25,20 75,50 25,80" style="fill:rgba(255,255,255,0.5);"/>
+    				</svg>
+			</div>
+			<div id="pauseButton2" onclick="playVideo('demovideo2', 'playButton2', 'pauseButton2')" style="display: none;">
+    				<svg height="100" width="100">
+        					<rect x="25" y="20" width="20" height="60" style="fill:rgba(255,255,255,0.5);"/>
+        					<rect x="55" y="20" width="20" height="60" style="fill:rgba(255,255,255,0.5);"/>
+    				</svg>
+			</div>
+		</div>
+		<a class="float-down" href="#about">↓</a>
+	</section>
+	
+	<section class="board board-about">
+		<a href="#about" id="about" class="title-bar">
+			<div class="bg" id="about-bg-s"><canvas width="50%" height="0%"></canvas></div>
+			<span> <span data-i18n="about">その他</span></span>
+		</a>
+		<div class="bg" id="about-bg"><canvas width="50%" height="0%"></canvas></div>
+		<!--<div class="right-pic">
+		<video id="demovideo" muted="muted"  onclick="this.play()" onplay="this.playbackRate=1.0" loop="loop" class="video animated-up" >
+		<source src="./demo0.mp4" type="video/mp4">-->
+		</video>
+		</div>
+		<div class="left-text-about">
+			<div>
+			&nbsp;&nbsp;連絡メール:kamitalk@qq.com<br><br>
+			ビリビリ動画　　ホームページへ<br>
+			</div>
+			<div style="margin-top:20px" class="actions">
+				<a href="https://space.bilibili.com/170623/dynamic" class="btn">梦川利一</a>
+				<a href="https://space.bilibili.com/353271/dynamic" class="btn">夢川利一</a>
+			</div>
+			<br>
+			&nbsp;&nbsp;&nbsp;<span id="time"></span>
+				<script type="application/javascript">
+			/*	
+				function getip(json) {
+				document.write("IPアドレス: ", json.ip);
+				}
+				function getaddr(json) {
+				document.write("<br>場所: ", json.addr);
+				}
+			*/	
+				</script>
+			<!--<script type="application/javascript" src="https://api64.ipify.org/?format=jsonp&callback=getip"></script>-->
+			<!--<script type="application/javascript" src="https://whois.pconline.com.cn/ipJson.jsp?json&callback=getaddr"></script>-->
+		</div>
+	</section>
+	</body>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/script.js"></script>
+<script>
+function playVideo(videoId, buttonId, pauseButtonId) {
+    var video = document.getElementById(videoId);
+    var button = document.getElementById(buttonId);
+    var pauseButton = document.getElementById(pauseButtonId);
+    if (video.paused) {
+        video.play();
+        button.style.display = "none";
+        pauseButton.style.display = "none";
+    } else {
+        video.pause();
+        pauseButton.style.display = "block";
+    }
+}
+</script>
+</html>
